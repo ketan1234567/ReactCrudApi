@@ -19,7 +19,15 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
+import { List } from '../student/List'
+
+
+
 export const Home = () => {
+
+
+  
+
   return (
     <>
       {/* Header */}
@@ -77,52 +85,8 @@ export const Home = () => {
 
         {/* Right - Student List */}
         <Grid item md={6} xs={12}>
-          <Paper elevation={3}>
-
-            <Box sx={{ backgroundColor: "#FFA000", p: 2 }}>
-              <Typography variant="h6" color="white">
-                Student List
-              </Typography>
-            </Box>
-
-            <TableContainer>
-              <Table>
-                <TableHead>
-                  <TableRow sx={{ backgroundColor: "#424242" }}>
-                    <TableCell sx={{ color: "white" }}>No</TableCell>
-                    <TableCell sx={{ color: "white" }}>Name</TableCell>
-                    <TableCell sx={{ color: "white" }}>Email</TableCell>
-                    <TableCell sx={{ color: "white" }}>Action</TableCell>
-                  </TableRow>
-                </TableHead>
-
-                <TableBody>
-                  <TableRow>
-                    <TableCell>1</TableCell>
-                    <TableCell>Sonam</TableCell>
-                    <TableCell>sonam@example.com</TableCell>
-                    <TableCell>
-
-                      <IconButton>
-                        <VisibilityIcon color="primary" />
-                      </IconButton>
-
-                      <IconButton>
-                        <EditIcon color="secondary" />
-                      </IconButton>
-
-                      <IconButton>
-                        <DeleteIcon color="error" />
-                      </IconButton>
-
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-
-              </Table>
-            </TableContainer>
-
-          </Paper>
+          <List/>
+          
         </Grid>
 
       </Grid>
