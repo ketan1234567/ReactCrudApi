@@ -54,3 +54,34 @@ axios.get(url)
 
 
 👉 Axios is used to connect your frontend (React) with backend (API)
+
+
+
+
+Why Choose Axios over Fetch?
+• Easier syntax and cleaner code.
+• Automatic JSON transformation without extra code.
+• Better built-in error handling.
+• Support for older browsers.
+
+
+
+
+| Feature         | Axios       | Fetch                      |
+| --------------- | ----------- | -------------------------- |
+| Easy code       | ✅ Simple    | ❌ More code                |
+| JSON handling   | ✅ Automatic | ❌ Manual (`res.json()`)    |
+| Error handling  | ✅ Easy      | ❌ Complicated              |
+| Browser support | ✅ Good      | ❌ Limited (older browsers) |
+
+Example (Axios vs Fetch)
+Axios:
+
+const res = await axios.get("/students");
+console.log(res.data);
+
+Fetch:
+
+const res = await fetch("/students");
+const data = await res.json();
+console.log(data);
