@@ -1,0 +1,56 @@
+https://github.com/ketan1234567/my-app.git
+npm i react-router-dom
+
+npm i json-server
+
+json-server --watch src/db.json
+
+
+Axios is a promise-based HTTP library that helps you easily communicate with servers or APIs over the internet. It allows your website or app to send and receive data from a server, like fetching information, submitting forms, or updating content without reloading the entire page.
+
+Axios uses promises to handle HTTP requests and responses.
+
+Axios = tool to talk to server
+
+It helps your app send data 📤
+It helps your app get data 📥
+Works with APIs (like your /students API)
+
+Real Example (Your Project)
+
+GET data
+
+axios.get("http://localhost:3000/students")
+
+👉 Get all students
+
+POST data
+
+axios.post("http://localhost:3000/students", student)
+
+👉 Add new student
+
+PUT (Update)
+
+axios.put(`http://localhost:3000/students/${id}`, student)
+
+
+DELETE
+
+axios.delete(`http://localhost:3000/students/${id}`)
+
+👉 Delete student
+
+
+What is "promise-based"?
+
+👉 Promise = result will come later
+
+Example:
+
+axios.get(url)
+  .then(res => console.log(res.data))
+  .catch(err => console.log(err));
+
+
+👉 Axios is used to connect your frontend (React) with backend (API)
